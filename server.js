@@ -9,6 +9,7 @@ const tecnicosRoutes = require("./routes/tecnicos")
 
 const app = express()
 const PORT = process.env.PORT || 3000
+const PUBLIC_IP = process.env.PUBLIC_IP || 'localhost';
 
 // Middleware
 app.use(cors())
@@ -78,9 +79,9 @@ app.use((req, res) => {
 })
 
 // Iniciar servidor
-app.listen(PORT,'0.0.0.0',() => {
-  console.log(`Servidor TierraConnect corriendo en http://0.0.0.0:${PORT}`)
-  console.log(`Servidor TierraConnect corriendo en http://0.0.0.0:${PORT}/api-docs`)
-})
+app.listen(PORT, '0.0.0.0', () => {
+  console.log(`Servidor TierraConnect corriendo en http://${PUBLIC_IP}:${PORT}`);
+  console.log(`Servidor TierraConnect corriendo en http://${PUBLIC_IP}:${PORT}/api-docs`);
+});
 
 module.exports = app
