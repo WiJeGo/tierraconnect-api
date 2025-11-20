@@ -78,9 +78,9 @@ app.use((req, res) => {
 })
 
 // Iniciar servidor
-app.listen(PORT, () => {
-  console.log(`✅ Servidor TierraConnect corriendo en http://localhost:${PORT}`)
-  console.log(`✅ Servidor TierraConnect corriendo en http://localhost:${PORT}/api-docs`)
+app.listen(PORT,'0.0.0.0',() => {
+  console.log(`Servidor TierraConnect corriendo en http://0.0.0.0:${PORT}`)
+  console.log(`Servidor TierraConnect corriendo en http://0.0.0.0:${PORT}/api-docs`)
 })
 
 module.exports = app
