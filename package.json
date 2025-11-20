@@ -1,0 +1,20 @@
+{
+  "name": "tierraconnect-api",
+  "version": "1.0.0",
+  "description": "API REST para TierraConnect - Plataforma de conexión agropecuaria",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["api", "rest", "agro", "tierraconnect"],
+  "author": "TierraConnect Team",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.0"
+  }
+}
